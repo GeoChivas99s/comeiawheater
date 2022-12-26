@@ -1,19 +1,17 @@
 import React, { FC } from "react";
 import { LayoutProps } from "./Layout.types";
-import {Helmet} from "react-helmet";
- 
-const Layout: FC<LayoutProps> = ({pageTitle, children}) => {
+import { Helmet } from "react-helmet";
+import './style.scss';
+
+const Layout: FC<LayoutProps> = ({ pageTitle, children }) => {
   return (
-    <>
+    <div className="layout">
       <Helmet>
         <meta charSet="utf-8" />
         <title>{pageTitle}</title>
-        <link rel="canonical" href="http://mysite.com/example" />
       </Helmet>
-    <div>
-        {children}
+      <div id="layoutContent">{children}</div>
     </div>
-    </>
   );
 };
 
