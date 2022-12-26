@@ -7,8 +7,8 @@ export default function Home() {
     <Layout pageTitle="Home">
       <div className="mainWrapper">
         <div className="headTitle">
-          <h2> WEATHER</h2>
-          <h6>select a city</h6>
+          <h1> WEATHER</h1>
+          <h1>select a city</h1>
         </div>
         <div className="imageWrapper">
           {" "}
