@@ -1,7 +1,8 @@
 import React from 'react'
+import Layout from 'components/Layout'
 
 export default function Home() {
   return (
-    <div>index</div>
+    <Layout pageTitle='Home'>Home</Layout>
   )
 }

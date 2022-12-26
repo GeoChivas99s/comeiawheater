@@ -1,4 +1,4 @@
 export const publicPages: Record<string, string> = {
-  home: "/home",
+  home: "/",
   city: "/city",
 };
