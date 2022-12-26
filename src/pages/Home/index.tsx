@@ -16,13 +16,13 @@ export default function Home() {
         </div>
         <div className="listWrapper">
           <ul>
-            <li>Dalol</li>
-            <li>FairBanks</li>
-            <li>London</li>
+            <li>Dallol(NG)</li>
+            <li>Fairbanks(US)</li>
+            <li>Londres(GB)</li>
           </ul>
           <ul>
-            <li>Recife</li>
-            <li>Vancouver</li>
+            <li> Caruaru(BR)</li>
+            <li>Vancouver(CA)</li>
             <li>Yakutsk</li>
           </ul>
         </div>
