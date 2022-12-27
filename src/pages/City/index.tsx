@@ -20,7 +20,7 @@ export default function City() {
 
   return (
     <Layout pageTitle={cityName}>
-      <div className="cityPageWrapper">
+      <div className="cityPageWrapper"  style={{ backgroundImage: "linear-gradient(to bottom, #58CBDC, #41A4B7)" }}>
         <div className="backIcon">
           <Link to="/">
             <Icon.FaArrowLeft />
