@@ -24,24 +24,24 @@ export default function Home() {
           <ul>
             <li>
               {" "}
-              <Link to="/city/Dallol">Dallol(NG)</Link>{" "}
+              <Link to="/city/Dallol">Dallol</Link>{" "}
             </li>
             <li>
-              <Link to="/city/Fairbanks">Fairbanks(US)</Link>
+              <Link to="/city/Fairbanks">Fairbanks</Link>
             </li>
             <li>
               {" "}
-              <Link to="/city/Londres">Londres(GB)</Link>
+              <Link to="/city/Londres">Londres</Link>
             </li>
           </ul>
           <ul>
             <li>
               {" "}
-              <Link to="/city/Caruaru">Caruaru(BR)</Link>{" "}
+              <Link to="/city/Caruaru">Caruaru</Link>{" "}
             </li>
             <li>
               {" "}
-              <Link to="/city/Vancouver">Vancouver(CA)</Link>
+              <Link to="/city/Vancouver">Vancouver</Link>
             </li>
             <li>
               {" "}
