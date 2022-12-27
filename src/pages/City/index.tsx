@@ -6,13 +6,11 @@ import * as Icon from "react-icons/fa";
 import * as Icons from "react-icons/md";
 import getCityFromUrl from "utils/getCityFromUrl";
 import { useApiGetClimate } from "services/useApiGetCityWeather";
-
+import { getDateFromUnixUtc } from "utils/getDateFromUnixUtc";
 export default function City() {
   const cityName = getCityFromUrl();
   const { isLoading, data } = useApiGetClimate(cityName);
   const mainData = data?.data;
-  console.log("loading", isLoading);
-  console.log("data", data?.data);
 
   return (
     <Layout pageTitle={cityName}>
@@ -41,9 +39,8 @@ export default function City() {
             <div className="temVar">
               <p>
                 {" "}
-                <Icon.FaArrowUp /> {Number(
-                  mainData?.main?.temp_max
-                ).toFixed(1)}°
+                <Icon.FaArrowUp /> {Number(mainData?.main?.temp_max).toFixed(1)}
+                °
               </p>
               <p>
                 {" "}
@@ -89,13 +86,13 @@ export default function City() {
           <span></span>
           <div>
             <label>sunrise</label>
-            <p>5:14 AM</p>
+            <p>{getDateFromUnixUtc(mainData?.sys?.sunrise)}</p>
           </div>
           <span></span>
 
           <div>
             <label>sunset</label>
-            <p>7:25 PM</p>
+            <p>{getDateFromUnixUtc(mainData?.sys?.sunset)}</p>
           </div>
           <span></span>
 
