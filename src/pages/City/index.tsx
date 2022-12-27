@@ -23,7 +23,7 @@ export default function City() {
           className="cityPageWrapper"
           style={{
             backgroundImage:
-              gradients[mainData?.weather[0]?.main] || gradients["Sunny"],
+              gradients[mainData?.weather[0]?.main] || gradients["Sun"],
           }}
         >
           <div className="backIcon">
