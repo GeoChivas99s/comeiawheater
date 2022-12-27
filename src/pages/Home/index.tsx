@@ -3,6 +3,7 @@ import "./style.scss";
 import Layout from "components/Layout";
 import globe from "assets/globe.svg";
 import { Link } from "react-router-dom";
+
 export default function Home() {
   return (
     <Layout pageTitle="Home">
@@ -23,24 +24,24 @@ export default function Home() {
           <ul>
             <li>
               {" "}
-              <Link to="/city/Dallol(NG)">Dallol(NG)</Link>{" "}
+              <Link to="/city/Dallol">Dallol(NG)</Link>{" "}
             </li>
             <li>
-              <Link to="/city/Fairbanks(US)"> Fairbanks(US)</Link>
+              <Link to="/city/Fairbanks">Fairbanks(US)</Link>
             </li>
             <li>
               {" "}
-              <Link to="/city/Londres(GB)">Londres(GB)</Link>
+              <Link to="/city/Londres">Londres(GB)</Link>
             </li>
           </ul>
           <ul>
             <li>
               {" "}
-              <Link to="/city/Caruaru(BR)">Caruaru(BR)</Link>{" "}
+              <Link to="/city/Caruaru">Caruaru(BR)</Link>{" "}
             </li>
             <li>
               {" "}
-              <Link to="/city/Vancouver(CA)">Vancouver(CA)</Link>
+              <Link to="/city/Vancouver">Vancouver(CA)</Link>
             </li>
             <li>
               {" "}

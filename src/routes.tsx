@@ -2,17 +2,17 @@ import React from "react";
 import Home from "pages/Home";
 import City from "pages/City";
 import { publicPages } from "utils/publicPages";
-import { BrowserRouter, Route, Switch  } from "react-router-dom";
+import { BrowserRouter , Route, Routes } from "react-router-dom";
 
-
-export default function Routes() {
+const MainRoutes = () => {
   return (
     <BrowserRouter>
-      <Switch>
-        <Route  path={publicPages.home} component={Home} />
-        <Route exact path={publicPages.city} component={City} />
-      </Switch>
+      <Routes>
+        <Route exact path={publicPages.home} element={<Home />} />
+        <Route path={publicPages.city} element={<City />} />
+      </Routes>
     </BrowserRouter>
   );
-}
- 
+};
+
+export default MainRoutes;
