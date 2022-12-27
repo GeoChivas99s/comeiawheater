@@ -7,6 +7,5 @@ export const getDateFromUnixUtc = (value: number) => {
     timeZone: "UTC",
   });
   const dateString = date.replace("GMT", "");
-  console.log(":::dateString", dateString);
   return dateString;
 };
