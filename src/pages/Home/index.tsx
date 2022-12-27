@@ -3,7 +3,7 @@ import "./style.scss";
 import Layout from "components/Layout";
 import globe from "assets/globe.svg";
 import { Link } from "react-router-dom";
-
+import * as Icon from 'react-icons/md'
 export default function Home() {
   return (
     <Layout pageTitle="Home">
@@ -15,6 +15,7 @@ export default function Home() {
         <div className="imageWrapper">
           {" "}
           <img src={globe} alt="" />{" "}
+        
         </div>
         <div className="listWrapper">
           {/* {cityName.map((item, index) => {
