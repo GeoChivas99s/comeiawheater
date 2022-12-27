@@ -54,6 +54,29 @@ export default function City() {
           <Icons.MdOutlineWbSunny />
         </div>
 
+        <section className="hoursWrapper">
+          <div>
+          <label>dawn</label>
+          <Icons.MdOutlineWbSunny/>
+          <p>20°C</p>
+          </div>
+          <div>
+          <label>dawn</label>
+          <Icons.MdOutlineWbSunny/>
+          <p>20°C</p>
+          </div>
+          <div>
+          <label>dawn</label>
+          <Icons.MdOutlineWbSunny/>
+          <p>20°C</p>
+          </div>
+          <div>
+          <label>dawn</label>
+          <Icons.MdOutlineWbSunny/>
+          <p>20°C</p>
+          </div>
+        </section>
+
         <div className="specsWrapper">
           <div>
             <label>wind speed</label>
