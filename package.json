@@ -49,6 +49,7 @@
   },
   "devDependencies": {
     "@types/react-helmet": "^6.1.6",
+    "jest": "^27.5.1",
     "sass": "^1.57.1",
     "typescript-plugin-css-modules": "^4.1.1"
   }

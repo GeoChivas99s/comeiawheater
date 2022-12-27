@@ -4,13 +4,14 @@ import Loader from "components/Loader";
 import Layout from "components/Layout";
 import * as Icon from "react-icons/fa";
 import * as Icons from "react-icons/md";
-import { gradients } from "utils/getGradients";
+import { gradients } from "constants/getGradients";
 import getCityFromUrl from "utils/getCityFromUrl";
 import { useApiGetClimate } from "services/useApiGetCityWeather";
 import { getDateFromUnixUtc } from "utils/getDateFromUnixUtc";
+import Teste from "components/svgs/sunWith/teste";
 
 export default function City() {
-  const cityName = getCityFromUrl();
+  const cityName = getCityFromUrl(document.location.pathname);
   const { isLoading, data } = useApiGetClimate(cityName);
   const mainData = data?.data;
 
@@ -70,17 +71,17 @@ export default function City() {
               <p>20°C</p>
             </div>
             <div>
-              <label>dawn</label>
+              <label>morning</label>
               <Icons.MdOutlineWbSunny />
               <p>20°C</p>
             </div>
             <div>
-              <label>dawn</label>
+              <label>afternoon</label>
               <Icons.MdOutlineWbSunny />
               <p>20°C</p>
             </div>
             <div>
-              <label>dawn</label>
+              <label>nigth</label>
               <Icons.MdOutlineWbSunny />
               <p>20°C</p>
             </div>

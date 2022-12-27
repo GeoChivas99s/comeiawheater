@@ -1,5 +1,5 @@
-const getCityFromUrl = () => {
-  const path = document.location.pathname.split("/").reverse()[0];
+const getCityFromUrl = (url: string) => {
+  const path = url.split("/").reverse()[0];
   return path;
 };
 
