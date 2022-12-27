@@ -51,8 +51,32 @@ export default function City() {
         </div>
 
         <div className="Sun">
-          <Icons.MdOutlineWbSunny/>
-         </div>
+          <Icons.MdOutlineWbSunny />
+        </div>
+
+        <div className="specsWrapper">
+          <div>
+            <label>wind speed</label>
+            <p>5.1 m/s</p>
+          </div>
+          <span></span>
+          <div>
+            <label>sunrise</label>
+            <p>5:14 AM</p>
+          </div>
+          <span></span>
+
+          <div>
+            <label>sunset</label>
+            <p>7:25 PM</p>
+          </div>
+          <span></span>
+
+          <div>
+            <label>humidity</label>
+            <p>52%</p>
+          </div>
+        </div>
       </div>
     </Layout>
   );
