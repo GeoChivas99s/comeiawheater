@@ -6,12 +6,17 @@ import Layout from "components/Layout";
 import * as Icon from "react-icons/fa";
 import * as Icons from "react-icons/md";
 import "./style.scss";
-
+import { useApiGetClimate } from "services/useApiGetCityWeather";
 export default function City() {
   const cityName = getCityFromUrl();
-  // console.log(":::",cityName );
+  console.log(":::", cityName);
+  const {data} = useApiGetClimate(cityName)
+  console.log("___data", data)
+      
   // useEffect(() => {
-  //   fetch(`${baseUrl}?q=${cityName}&appid=${process.env.REACT_APP_API_KEY}`)
+  //   fetch(
+  //     `${process.env.REACT_APP_API_URL}?q=${cityName}&appid=${process.env.REACT_APP_API_KEY}`
+  //   )
   //     .then((data) => data.json())
   //     .then((response) => {
   //       console.log(":::", response);
@@ -20,7 +25,12 @@ export default function City() {
 
   return (
     <Layout pageTitle={cityName}>
-      <div className="cityPageWrapper"  style={{ backgroundImage: "linear-gradient(to bottom, #58CBDC, #41A4B7)" }}>
+      <div
+        className="cityPageWrapper"
+        style={{
+          backgroundImage: "linear-gradient(to bottom, #58CBDC, #41A4B7)",
+        }}
+      >
         <div className="backIcon">
           <Link to="/">
             <Icon.FaArrowLeft />
@@ -56,24 +66,24 @@ export default function City() {
 
         <section className="hoursWrapper">
           <div>
-          <label>dawn</label>
-          <Icons.MdOutlineWbSunny/>
-          <p>20°C</p>
+            <label>dawn</label>
+            <Icons.MdOutlineWbSunny />
+            <p>20°C</p>
           </div>
           <div>
-          <label>dawn</label>
-          <Icons.MdOutlineWbSunny/>
-          <p>20°C</p>
+            <label>dawn</label>
+            <Icons.MdOutlineWbSunny />
+            <p>20°C</p>
           </div>
           <div>
-          <label>dawn</label>
-          <Icons.MdOutlineWbSunny/>
-          <p>20°C</p>
+            <label>dawn</label>
+            <Icons.MdOutlineWbSunny />
+            <p>20°C</p>
           </div>
           <div>
-          <label>dawn</label>
-          <Icons.MdOutlineWbSunny/>
-          <p>20°C</p>
+            <label>dawn</label>
+            <Icons.MdOutlineWbSunny />
+            <p>20°C</p>
           </div>
         </section>
 
