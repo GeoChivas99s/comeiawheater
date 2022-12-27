@@ -28,7 +28,7 @@ export default function City() {
 
         <div className="tittleWrapper">
           <p className="title1"> {cityName}</p>
-          <p className="subtitle1">Sunny</p>
+          <p className="subtitle1">{mainData?.weather[0]?.main}</p>
         </div>
 
         <div className="tempWrapper">
