@@ -1,0 +1,82 @@
+.cityPageWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    height: 100%;
+    padding: 30px 15px;
+    background-color: #58CBDC;
+}
+
+.backIcon {
+    align-self: flex-start;
+
+    svg {
+        color: #FAFAFA;
+        font-size: 24px;
+
+    }
+}
+
+.tittleWrapper {
+    color: #FAFAFA;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    font-family: 'Montserrat';
+    font-weight: 200;
+
+    .title1 {
+        font-size: 42px;
+    }
+
+    .subtitle1 {
+        font-size: 24px;
+        font-weight: 100;
+
+    }
+}
+
+.tempWrapper {
+    display: flex;
+    align-items: center;
+
+}
+
+.temp {
+    font-family: 'Montserrat';
+    color: #FAFAFA;
+    font-size: 120px;
+}
+
+.complements {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-family: 'Montserrat';
+    color: #FAFAFA;
+    justify-content: space-between;
+    height: 60%;
+    svg {
+        color: #FAFAFA;
+
+    }
+}
+
+.temVar {
+
+    p {
+        display: flex;
+        align-items: center;
+        font-weight: 100;
+        svg{
+            font-weight: 100;
+        }
+    }
+}
+
+.celcius{
+    font-size: 24px;
+}
