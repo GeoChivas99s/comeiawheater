@@ -4,6 +4,7 @@ import getCityFromUrl from "utils/getCityFromUrl";
 import { Link } from "react-router-dom";
 import Layout from "components/Layout";
 import * as Icon from "react-icons/fa";
+import * as Icons from "react-icons/md";
 import "./style.scss";
 
 export default function City() {
@@ -48,6 +49,10 @@ export default function City() {
             </div>
           </div>
         </div>
+
+        <div className="Sun">
+          <Icons.MdOutlineWbSunny/>
+         </div>
       </div>
     </Layout>
   );

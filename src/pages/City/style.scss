@@ -59,6 +59,7 @@
     color: #FAFAFA;
     justify-content: space-between;
     height: 60%;
+
     svg {
         color: #FAFAFA;
 
@@ -71,12 +72,24 @@
         display: flex;
         align-items: center;
         font-weight: 100;
-        svg{
+
+        svg {
             font-weight: 100;
         }
     }
 }
 
-.celcius{
+.celcius {
     font-size: 24px;
 }
+
+.Sun {
+    svg {
+        color: #FAFAFA;
+        font-family: 'Montserrat';
+        font-size: 110px;
+    }
+
+}
+
+
