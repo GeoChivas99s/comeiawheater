@@ -4,7 +4,7 @@
     justify-content: start;
     flex-direction: column;
     height: 100%;
-    padding: 50px  15px 90px 15px;
+    padding: 50px 15px 90px 15px;
     //background-color: #58CBDC;
 }
 
@@ -42,7 +42,7 @@
 }
 
 .tempWrapper {
-  
+
     display: flex;
     align-items: center;
 
@@ -87,11 +87,17 @@
 }
 
 .Sun {
+ 
 
     @media (max-width:800px) {
         margin-bottom: 60px;
     }
 
+    @media (max-width:375px) {
+        margin-bottom: 3px;
+        
+    }
+   //margin-bottom: 1px !important; 
     svg {
         color: #FAFAFA;
         font-family: 'Montserrat';
@@ -138,9 +144,16 @@
 }
 
 .hoursWrapper {
-  @media (max-width:800px) {
+ //margin-bottom: 1px !important;
+
+    @media (max-width:800px) {
         margin-bottom: 40px;
     }
+    @media (max-width:375px) {
+        margin-bottom: 0px;
+    }
+
+   
     display: flex;
     align-items: center;
     justify-content: space-between;

@@ -54,10 +54,15 @@
 .listWrapper {
 
 
-
     ul {
+        @media (max-width:300px) {
+
+            font-size: 14px;
+
+        }
+
         display: flex;
-        flex-wrap: wrap;
+        // flex-wrap: wrap;
         list-style: none;
         flex-direction: row;
         padding: 1px 20px;
@@ -69,7 +74,8 @@
         li {
             color: #FAFAFA;
             padding: 15px;
-            a{
+
+            a {
                 color: #FAFAFA;
                 text-decoration: none;
             }
