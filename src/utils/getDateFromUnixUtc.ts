@@ -6,6 +6,7 @@ export const getDateFromUnixUtc = (value: number) => {
     timeZoneName: "longOffset",
     timeZone: "UTC",
   });
-
-  return date.replace("GMT", "");
+  const dateString = date.replace("GMT", "");
+  console.log(":::dateString", dateString);
+  return dateString;
 };

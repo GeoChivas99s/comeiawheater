@@ -5,7 +5,7 @@ import Layout from "components/Layout";
 import * as Icon from "react-icons/fa";
 import * as Icons from "react-icons/md";
 import { gradients } from "constants/getGradients";
-import getCityFromUrl from "utils/getCityFromUrl";
+import getCityFromUrl from "utils/getCityFromPathname";
 import { useApiGetClimate } from "services/useApiGetCityWeather";
 import { getDateFromUnixUtc } from "utils/getDateFromUnixUtc";
 import Teste from "components/svgs/sunWith/teste";
