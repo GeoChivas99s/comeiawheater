@@ -1,9 +1,8 @@
-import React from "react";
 import "./style.scss";
 import Layout from "components/Layout";
 import globe from "assets/globe.svg";
 import { Link } from "react-router-dom";
-import * as Icon from 'react-icons/md'
+
 export default function Home() {
   return (
     <Layout pageTitle="Home">
