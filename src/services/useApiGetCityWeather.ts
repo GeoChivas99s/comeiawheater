@@ -1,4 +1,3 @@
-import React from "react";
 import getClimate from "api/getClimate";
 import { useQuery } from "@tanstack/react-query";
 
