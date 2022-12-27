@@ -1,27 +1,18 @@
 import React, { useEffect } from "react";
-import { baseUrl } from "services/utils";
-import getCityFromUrl from "utils/getCityFromUrl";
+import "./style.scss";
 import { Link } from "react-router-dom";
 import Layout from "components/Layout";
 import * as Icon from "react-icons/fa";
 import * as Icons from "react-icons/md";
-import "./style.scss";
+import getCityFromUrl from "utils/getCityFromUrl";
 import { useApiGetClimate } from "services/useApiGetCityWeather";
+
 export default function City() {
   const cityName = getCityFromUrl();
-  console.log(":::", cityName);
-  const {data} = useApiGetClimate(cityName)
-  console.log("___data", data)
-      
-  // useEffect(() => {
-  //   fetch(
-  //     `${process.env.REACT_APP_API_URL}?q=${cityName}&appid=${process.env.REACT_APP_API_KEY}`
-  //   )
-  //     .then((data) => data.json())
-  //     .then((response) => {
-  //       console.log(":::", response);
-  //     });
-  // }, []);
+  const { isLoading, data } = useApiGetClimate(cityName);
+  const mainData = data?.data;
+  console.log("loading", isLoading);
+  console.log("data", data?.data);
 
   return (
     <Layout pageTitle={cityName}>
@@ -43,18 +34,21 @@ export default function City() {
         </div>
 
         <div className="tempWrapper">
-          <div className="temp">23</div>
+          <div className="temp">{Number(mainData?.main?.temp).toFixed(1)}</div>
           <div className="complements">
             <div className="celcius">°C</div>
 
             <div className="temVar">
               <p>
                 {" "}
-                <Icon.FaArrowUp /> 25°{" "}
+                <Icon.FaArrowUp /> {Number(
+                  mainData?.main?.temp_max
+                ).toFixed(1)}°
               </p>
               <p>
                 {" "}
-                <Icon.FaArrowDown /> 20°{" "}
+                <Icon.FaArrowDown />
+                {Number(mainData?.main?.temp_min).toFixed(1)}°{" "}
               </p>
             </div>
           </div>
@@ -90,7 +84,7 @@ export default function City() {
         <div className="specsWrapper">
           <div>
             <label>wind speed</label>
-            <p>5.1 m/s</p>
+            <p>{mainData?.wind?.speed} m/s</p>
           </div>
           <span></span>
           <div>
@@ -107,7 +101,7 @@ export default function City() {
 
           <div>
             <label>humidity</label>
-            <p>52%</p>
+            <p>{mainData?.main?.humidity}%</p>
           </div>
         </div>
       </div>
