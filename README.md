@@ -6,6 +6,10 @@
 ## Deploy wheater
 https://comeiaweather.netlify.app/
 
+## Scripts
+npm start -> run  app
+npm test ->  test app
+
 
 ## GitHub Link
 https://github.com/GeoChivas99s/comeiawheater
