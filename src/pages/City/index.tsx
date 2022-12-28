@@ -8,7 +8,7 @@ import { gradients } from "constants/getGradients";
 import getCityFromUrl from "utils/getCityFromPathname";
 import { useApiGetClimate } from "services/useApiGetCityWeather";
 import { getDateFromUnixUtc } from "utils/getDateFromUnixUtc";
-import Teste from "components/svgs/sunWith/teste";
+
 
 export default function City() {
   const cityName = getCityFromUrl(document.location.pathname);
