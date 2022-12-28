@@ -20,9 +20,10 @@ export default function City() {
     Rain: <Icon.FaCloudShowersHeavy />,
     Snow: <Icon.FaSnowflake />,
     Clouds: <Icon.FaCloud />,
-    Mist: <Icon.FaCloudSun />,
+    Mist:<Icon.FaSmog />,
     Clear: <Icons.MdOutlineWbSunny />,
     Haze: <Icon.FaSmog />,
+    Fog: <Icon.FaSmog />
   };
 
   return (
@@ -71,7 +72,7 @@ export default function City() {
           </div>
 
           <div className="Sun">
-            {weatherIcons[mainData?.weather[0]?.main] || weatherIcons["Sun"]}
+            {weatherIcons[mainData?.weather[0]?.main] || weatherIcons["Clouds"]}
           </div>
 
           <section className="hoursWrapper">
