@@ -54,7 +54,7 @@ export default function City() {
             </div>
             <div className="complements">
               <div className="celcius">°C</div>
-              <Icon.FaSmog />
+
               <div className="temVar">
                 <p>
                   {" "}
