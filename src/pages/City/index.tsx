@@ -77,23 +77,23 @@ export default function City() {
           <section className="hoursWrapper">
             <div>
               <label>dawn</label>
-              <Icons.MdOutlineWbSunny />
-              <p>20°C</p>
+              <Icon.FaSnowflake />
+              <p>-8°C</p>
             </div>
             <div>
               <label>morning</label>
-              <Icons.MdOutlineWbSunny />
-              <p>20°C</p>
+              <Icon.FaCloudSunRain />
+              <p>5°C</p>
             </div>
             <div>
               <label>afternoon</label>
-              <Icons.MdOutlineWbSunny />
+              <Icon.FaCloudSunRain />
               <p>20°C</p>
             </div>
             <div>
               <label>nigth</label>
-              <Icons.MdOutlineWbSunny />
-              <p>20°C</p>
+              <Icon.FaCloudMoonRain />
+              <p>17°C</p>
             </div>
           </section>
 
