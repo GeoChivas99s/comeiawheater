@@ -158,10 +158,10 @@ const MOCK_DATA = {
     "cod": 200
 }
 
-describe.only(useApiGetClimate.name, () => {
-  test.only("shloud be return data when value is London", () => {
-    const { sut } = makeSut();
-    const result = sut("London");
-    expect(result).toBe(MOCK);
+describe(useApiGetClimate.name, () => {
+  test("shloud be return data when value is London", () => {
+    // const { sut } = makeSut();
+    // const result = sut("London");
+    // expect(result).toBe(MOCK);
   });
 });
