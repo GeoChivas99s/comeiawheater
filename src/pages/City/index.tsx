@@ -22,6 +22,7 @@ export default function City() {
     Clouds: <Icon.FaCloud />,
     Mist: <Icon.FaCloudSun />,
     Clear: <Icons.MdOutlineWbSunny />,
+    Haze: <Icon.FaSmog />,
   };
 
   return (
@@ -53,7 +54,7 @@ export default function City() {
             </div>
             <div className="complements">
               <div className="celcius">°C</div>
-
+              <Icon.FaSmog />
               <div className="temVar">
                 <p>
                   {" "}
