@@ -3,7 +3,7 @@
 ## description
 
 
-## Deploy wheater
+## Deploy link
 https://comeiaweather.netlify.app/
 
 ## Scripts
