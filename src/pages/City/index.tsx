@@ -8,12 +8,21 @@ import { gradients } from "constants/getGradients";
 import getCityFromUrl from "utils/getCityFromPathname";
 import { useApiGetClimate } from "services/useApiGetCityWeather";
 import { getDateFromUnixUtc } from "utils/getDateFromUnixUtc";
-
+import { ReactNode } from "react";
 
 export default function City() {
   const cityName = getCityFromUrl(document.location.pathname);
   const { isLoading, data } = useApiGetClimate(cityName);
   const mainData = data?.data;
+
+  const weatherIcons: Record<string, ReactNode> = {
+    Sun: <Icons.MdOutlineWbSunny />,
+    Rain: <Icon.FaCloudShowersHeavy />,
+    Snow: <Icon.FaSnowflake />,
+    Clouds: <Icon.FaCloud />,
+    Mist: <Icon.FaCloudSun />,
+    Clear: <Icons.MdOutlineWbSunny />,
+  };
 
   return (
     <Layout pageTitle={cityName}>
@@ -61,7 +70,7 @@ export default function City() {
           </div>
 
           <div className="Sun">
-            <Icons.MdOutlineWbSunny />
+            {weatherIcons[mainData?.weather[0]?.main] || weatherIcons["Sun"]}
           </div>
 
           <section className="hoursWrapper">
