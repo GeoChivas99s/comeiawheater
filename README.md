@@ -24,4 +24,5 @@ react-spinners -> for spinners used in loading state
 react-Icons -> used to get some icons to use in application
 react-helmet -> used to improve some specs in SEO
 axios -> fetching data 
+react-query -> used fot increase perfomance in app, no repeated requests  in staleTime = 1min
 
